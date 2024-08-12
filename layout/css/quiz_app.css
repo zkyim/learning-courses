@@ -1,0 +1,451 @@
+.container-test ul {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.container-test ul li {
+    list-style: none;
+    background-color: #efefef;
+    padding: 20px;
+    box-shadow: 0 0 10px #afafaf;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.container-test ul li:not(:last-child) {
+    margin-bottom: 90px;
+}
+
+.container-test ul li:last-child {
+    margin-bottom: 40px;
+}
+
+.container-test ul li > label::after {
+    content: ' إزالة التمييز ';
+    position: absolute;
+    background-color: #46a746;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px 35px;
+    display: none;
+}
+
+.container-test ul li > input[type="checkbox"]:checked + label::after {
+    display: block;
+}
+
+.container-test ul li > input[type="checkbox"]:checked + label {
+    background-color: #46a746;
+}
+
+.container-test ul li .title {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    background-color: var(--main-color-alt);
+}
+
+.container-test ul li .title .new
+
+.container-test ul li .ans {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-test ul li .answer {
+    background-color: #fff;
+    width: 100%;
+    padding: 12px 15px;
+}
+
+.container-test ul li .answer {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.container-test ul li .answer > div > div {
+    display: flex;
+}
+
+.container-test ul li .answer > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-test ul li .answer label {
+    margin-right: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.container-test ul li .answer input[type="radio"]:checked + label {
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.container-test ul .image,
+.container-test ul .paragraph {
+    padding: 15px;
+    background: #efefef;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px #afafaf;
+}
+
+@media (max-width:867px) {
+    .container-test ul {
+        width: 90%;
+    }
+}
+
+.right-answer {
+  background-color: #00ff001c !important;
+  border: 2px solid var(--green-color) !important;
+  border-radius: 6px;
+}
+
+.righticon {
+  color: var(--green-color);
+  font-size: 24px;
+}
+
+.wrong-answer {
+  background-color: #ff00001c !important;
+  border: 2px solid var(--red-color) !important;
+  border-radius: 6px;
+}
+
+.wrongicon {
+  color: var(--red-color);
+  font-size: 24px;
+}
+
+/* ===================================== Start Countdown =====================================*/
+
+.countdown {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
+.countdown .value-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+.countdown svg {
+    width: 126px;
+    height: 126px;
+    transform: rotate(-90deg);
+    background: white;
+    border-radius: 50%;
+}
+.countdown circle {
+    fill: none;
+    stroke: var(--main-color);
+    stroke-width: 12px;
+    stroke-dasharray: 345;
+    stroke-dashoffset: 0;
+}
+/* ===================================== End Countdown =====================================*/
+.container-test .finish-test {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.container-test .finish-test button {
+    border-radius: 6px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 2px 15px;
+    font-size: 19px;
+    border: 2px solid var(--main-color);
+    transition: var(--main-transition);
+}
+.container-test .finish-test button:hover {
+    background-color: var(--main-color-alt);
+}
+/*====================================== Start Grade Test ===================================*/
+.grade-test {
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #ddd;
+}
+.grade-test ul {
+    width: 100%;
+}
+.grade-test ul li{
+  box-shadow: 0 0 0 white;
+}
+.grade-test ul li input, 
+.grade-test ul li label {
+  pointer-events: none;
+}
+.grade-test .title {
+    padding: 10px;
+    background: var(--main-color-alt);
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.grade-test .content {
+    padding: 18px 5px;
+}
+.grade-test .content > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.grade-test .content > div > span {
+    width: 52px;
+    text-align: center;
+    border: 1.3px solid;
+    padding: 1px 6px;
+    border-radius: 6px;
+}
+.grade-test .content .count-ans {
+    color: var(--main-color);
+}
+.grade-test .content .rihgt-ans {
+    color: var(--green-color);
+}
+.grade-test .content .wrong-ans {
+    color: var(--red-color);
+}
+.grade-test .content .result.good {
+    color: var(--green-color);
+}
+.grade-test .content .result.bad {
+    color: var(--red-color);
+}
+.grade-test .footer .show-wrong-ans,
+.grade-test .footer .show-all-ans {
+    margin: 10px 0;
+}
+.grade-test .footer .show-wrong-ans button {
+    color: var(--red-color);
+}
+.grade-test .footer .show-all-ans button {
+    color: var(--main-color);
+}
+.grade-test .footer .show-wrong-ans button,
+.grade-test .footer .show-all-ans button {
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding: 7px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    background-color: #eaeaeade;
+    font-size: 16px;
+    font-weight: 600;
+}
+.grade-test .footer button i {
+  transition: var(--main-transition);
+}
+.grade-test .footer button > i.rotate {
+  transform: rotate(-180deg);
+}
+.grade-test .footer > div > div {
+  overflow: hidden;
+  height: 0px;
+  transition: var(--main-transition);
+}
+@media (max-width:867px) {
+    .grade-test {
+        width: 90%;
+    }
+}
+/*====================================== End Grade Test ===================================*/
+/*====================================== Start Equation ===================================*/
+.create-test-page .container .container-add-test ul li .input-data{
+    width: 100%;
+    min-height: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 5px 15px;
+    border: 1px solid #ccc;
+    cursor: text;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+  }
+.parent-op {
+    display: flex;
+    align-items: center;
+    /* justify-content: end; */
+    width: fit-content;
+    flex-direction: row-reverse;
+  }
+  .unknown {
+    background-color: #ff572259;
+    display: inline-block;
+    width: 18px;
+    height: 20px;
+    margin: 6px 0;
+    border: 1px dashed #eee;
+    position: relative;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+  .unknown::before {
+    content: '?';
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .unknown.cursor {
+    background-color: #ccc;
+  }
+  .unknown.cursor::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.5px;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    animation: cursor-text 0.8s infinite;
+  }
+  .fraction {
+    display: flex;
+    flex-direction: column;
+    padding: 0 5px;
+  }
+  .fraction .numerator,
+  .fraction .denominator  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fraction .the-line {
+    width: 100%;
+    height: 1.5px;
+    background-color: #000;
+  }
+  .root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 7px 0 4px;
+    position: relative;
+    border-top: 1.5px solid #000;
+    margin-right: 16px;
+    margin-left: 3px;
+  }
+  .root .lines-root {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+  .root .lines-root .line_1 {
+    position: absolute;
+    width: 1.5px;
+    height: 90%;
+    background-color: #000;
+    transform: translate(4px, -1px) rotate(-16deg);
+  }
+  .root .lines-root .line_2 {
+    position: absolute;
+    width: 1.5px;
+    height: 50%;
+    background-color: #000;
+    left: 0;
+    bottom: 0;
+    transform: translate(4px, 1px) rotate(40deg);
+  }
+  .root .exponent {
+    position: absolute;
+    top: -1px;
+    right: -10px;
+    scale: 0.5;
+    transform: translate(100%, -100%);
+  }
+  .root .exponent.unknown {
+    font-size: 19px;
+    height: 24px;
+    border-width: 1.5px;
+    margin: 0;
+  }
+  .num-power {
+    position: relative;
+    margin-left: 5px;
+  }
+  .num-power .the-power {
+    position: absolute;
+    top: 12px;
+    left: 4px;
+    font-size: 14px;
+    transform: translate(-100%, -100%);
+    scale: 0.7;
+  }
+  .num-down {
+    position: relative;
+    margin-left: 5px;
+  }
+  .num-down .the-down-num {
+    position: absolute;
+    bottom: 11px;
+    left: 4px;
+    font-size: 13px;
+    transform: translate(-100%, 100%);
+    scale: 0.7;
+  }
+  .num-power .the-power.unknown,
+  .num-down .the-down-num.unknown {
+    font-size: 19px;
+    height: 24px;
+    border-width: 1.5px;
+    margin: 0;
+  }
+  .num {
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+  }
+  .root .unknown,
+  .num-power.unknown, 
+  .num-down.unknown {
+    margin-bottom: 0;
+  }
+
+  .equa {
+    margin-left: 4px;
+  }
+  .equa::after,
+  .equa::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 60%;
+    background-color: black;
+    z-index: 1;
+  }
+  .equa::after {
+    top: 0;
+    right: 0;
+  }
+  .equa::before {
+    bottom: 0;
+    left: 0;
+    margin-left: 4px;
+  }
+/*====================================== End Equation =====================================*/

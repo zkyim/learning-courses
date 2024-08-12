@@ -1,0 +1,24 @@
+[[{
+                    "type_item": "question",
+                    "the_section": "إحصاء","math": "math",
+                    "suffling": "shuffle",
+                    "multans": "no-multans",
+                    "title": "1 1",
+                    "answeres": ["1","2","3","4"],
+                    "right_answeres" : [1],
+                    "explain": "1 1=2",
+                    "the_code": ""
+                },{
+                    "type_item": "question",
+                    "the_section": "إحصاء","math": "no-math",
+                    "suffling": "shuffle",
+                    "multans": "no-multans",
+                    "title": "ثصضقثصض",
+                    "answeres": ["","","",""],
+                    "right_answeres" : [],
+                    "explain": "",
+                    "the_code": ""
+                },{"title_section": "القسم الأول",
+            "paragraph_count": 0,
+            "the_codes_of_question": "",
+            "the_codes_of_pargraph": ""}]]
