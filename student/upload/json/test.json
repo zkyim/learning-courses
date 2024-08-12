@@ -1,0 +1,21 @@
+[
+    [
+        {
+            "title_section": "section_1",
+            "paragraph_count": 0,
+            "the_codes": ["1234"]
+        },
+        {
+            "type_item": "question",
+            "type_question": "laphzy",
+            "title": "question1",
+            "answer_1": "answer_1",
+            "answer_2": "answer_2",
+            "answer_3": "answer_3",
+            "answer_4": "answer_4",
+            "right_answeres" : ["answer_1"],
+            "explain": "explain",
+            "the_code": "1234"
+        }
+    ]
+]
